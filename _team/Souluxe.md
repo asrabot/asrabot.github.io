@@ -8,6 +8,7 @@ image: "images/team/souluxe.png"
 jobtitle: "Owner"
 promoted: true
 weight: 2
+layout: team
 ---
 
 Hey I'm Mexi.
