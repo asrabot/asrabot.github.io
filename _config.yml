@@ -14,9 +14,6 @@ collections:
   asra:
     output: true
     permalink: /commands/:collection/:name
-  asramusic:
-    output: true
-    permalink: /commands/:collection/:name
   team:
     output: true
 

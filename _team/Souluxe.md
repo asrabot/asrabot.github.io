@@ -10,5 +10,5 @@ promoted: true
 weight: 2
 ---
 
-Hey I'm Mexi. <br>
+Hey I'm Mexi.
 I'm a young programmer who is currently working on the Discord bot Asra so make sure you check it out!
