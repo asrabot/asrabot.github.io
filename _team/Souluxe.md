@@ -10,11 +10,5 @@ promoted: true
 weight: 2
 ---
 
-Hey I'm Souluxe. <br>
-I'm a young programmer who is currently working on the Discord bot Asra Music so make sure you check it out!
-
-🔶 Name: Souluxe<br>
-🔶 Dms: Open<br>
-🔷 Pronouns: They/Them<br>
-🔷 Gender: Non-Binary<br>
-🔷 Sexuality: Pansexual
+Hey I'm Mexi. <br>
+I'm a young programmer who is currently working on the Discord bot Asra so make sure you check it out!

@@ -1,6 +1,6 @@
 main:
   - name: "Commands"
-    url: "/commands/"
+    url: "/commands/asra/"
     weight: 2
   - name: "FAQ"
     url: "/faq/"

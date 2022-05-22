@@ -10,3 +10,5 @@ promoted: false
 weight: 8
 layout: team
 ---
+
+Hello, I'm Someoneidk, I'm just a ordinary kid who likes playing games and watching anime but mostly during school days I'm usually a nerd. Asra is a amazing server with people from different places and when all of us come together its literally so fun
