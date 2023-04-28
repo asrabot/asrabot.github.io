@@ -3,7 +3,7 @@
 
 ## What is Asra?
 
-Asra is a fully customizable, multipurpose Discord bot for your Discord server.
+Asra is a fully customizable, multipurpose discord bot that allows users to automate tasks and add features to their Discord server. 
 
 ### Features
 Asra has such a wide range of features and aims to encompass the tasks completed by many bots currently in servers across Discord into just one awesome bot.
@@ -21,11 +21,3 @@ Asra has such a wide range of features and aims to encompass the tasks completed
 - AI Chatbot
 - Autoroles
 - and so much more
-
-## What is Asra Paradise?
-
-**Asra Paradise** is an extremely friendly and fun, social discord server with active voice and text channels.
-
-Our mission is to make an amazing community server and provide the perfect place to make friends and meet new people.
-
-https://www.youtube.com/watch?v=zqr_4MK5bZo 
