@@ -10,25 +10,7 @@
 
   <url>
 
-    <loc>https://asrabot.github.io/asramusic/</loc>
-
-  </url>
-
-  <url>
-
-    <loc>https://asrabot.github.io/commands/</loc>
-
-  </url>
-
-  <url>
-
     <loc>https://asrabot.github.io/commands/asra/</loc>
-
-  </url>
-
-  <url>
-
-    <loc>https://asrabot.github.io/commands/asramusic/</loc>
 
   </url>
 
@@ -127,16 +109,17 @@
     <loc>https://asrabot.github.io/commands/asra/giveaways/</loc>
 
   </url>
+  
+    <url>
+
+    <loc>https://asrabot.github.io/commands/asra/reactionrole/</loc>
+
+  </url>
 
   <url>
 
-    <loc>  https://asrabot.github.io/commands/asramusic/info/</loc>
+    <loc>https://asrabot.github.io/commands/asra/ticket/</loc>
 
   </url>
-
-  <url>
-
-    <loc>  https://asrabot.github.io/commands/asramusic/music/</loc>
-
-  </url>
+  
 </urlset>
