@@ -1,6 +1,9 @@
 body, html {
-    font-family: Arial, sans-serif;
+    font-family: Nunito,Arial,"Helvetica Neue",Helvetica,sans-serif;
     font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
     color: #666666;
     height: 100%;
     background-color: #fff;
@@ -11,10 +14,6 @@ body, html {
 
 html {
     box-sizing: border-box;
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: transparent;
 }
@@ -166,7 +165,6 @@ img {
 }
 
 .l1-txt1 {
-    font-family: PlayfairDisplay-Regular;
     font-size: 60px;
     color: #333;
     line-height: 1.1;
@@ -194,7 +192,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .m2-txt1 {
-    font-family: Poppins-Regular;
     font-size: 24px;
     color: #999;
     line-height: 1.2;
@@ -230,11 +227,11 @@ p {
 }
 
 .m2-txt2 {
-    font-family: Poppins-Regular;
     font-size: 16px;
     color: #999;
     line-height: 1.2;
     text-transform: uppercase;
+    transform: skewX(0deg);
 }
 .p-r-40 {
     padding-right: 40px;
