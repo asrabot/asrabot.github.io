@@ -26,6 +26,12 @@ html {
     box-sizing: border-box;
 }
 
+@media (max-width: 450px) {
+    .cta {
+        font-size: inherit !important;
+    }
+}
+
 .overlay1 {
     position: relative;
     z-index: 1;
@@ -152,9 +158,13 @@ img {
 .w-full {
     width: 100%;
 }
-.p-l-48 {
-    padding-left: 48px;
+
+@media (min-width: 450px) {
+    .p-l-48 {
+        padding-left: 48px;
+    }
 }
+
 .p-b-90 {
     padding-bottom: 90px;
 }
