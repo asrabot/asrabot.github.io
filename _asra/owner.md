@@ -82,7 +82,7 @@ Setup giveaways in your server by setting a role which can manage and create giv
 `/settings giveaways [role]`
 
 #### Leave Message<br/>
-Set the leave message you would like the bot to send when a user leaves. Click [here](https://asraparadise.github.io/commands/asra/owner/#variables-for-welcome-and-leave-messages) to see the variables you can use in the leave message.<br/>
+Set the leave message you would like the bot to send when a user leaves. Click [here](https://asrabot.github.io/commands/asra/owner/#variables-for-welcome-and-leave-messages) to see the variables you can use in the leave message.<br/>
 `/settings leavemessage [channel] [message]`
 
 #### Member Counter<br/>
@@ -127,7 +127,7 @@ Set the channel Suggestions for your server from your members will be sent in.<b
 `/settings suggestions [channel] [role]`
 
 #### Welcome Message<br/>
-Set the welcome message you would like the bot to send when a new user joins. The image link you provide should be to an online image hosting service such as imgur. Click [here](https://asraparadise.github.io/commands/asra/owner/#variables-for-welcome-and-leave-messages) to see the variables you can use in the welcome message.<br/>
+Set the welcome message you would like the bot to send when a new user joins. The image link you provide should be to an online image hosting service such as imgur. Click [here](https://asrabot.github.io/commands/asra/owner/#variables-for-welcome-and-leave-messages) to see the variables you can use in the welcome message.<br/>
 `/settings welcomemessage [channel] [message] (imagelink)`
 
 
