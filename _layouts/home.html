@@ -1,51 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+bodyClass: "page-home"
+---
 
-<head>
-    <meta charset="utf-8">
-    <title>{% if page.title %}{{page.title}}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="{{ '/images/favicon-32x32.jpg' | relative_url }}">
-    <!-- Google Fonts CDN -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d746b9d566.js" crossorigin="anonymous"></script>
-    <!-- Self host font -->
-    <!-- <link rel="preload" href="{{ '/assets/fonts/playfair-display.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin> -->
-    <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
-    <link href="/assets/css/maintenance.css" rel="stylesheet">
-
- {% if page.description %}
-    <meta name="description" content="{{ page.description }}" />{% endif %}
-    {% if page.meta_title %}
-    <meta property="og:title" content="{{ page.meta_title }}" />{% else %}
-    <meta property="og:title" content="{{ page.title }}" />{% endif %}
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ url }}" />
-    {% if page.image %}
-    <meta property="og:image" content="{{ page.image | absolute_url }}" />{% endif %}
-    {% if page.description %}
-    <meta property="og:description" content="{{ page.description }}" />{% endif %}
-</head>
-
-<body class='page page-home'>
-    <div class="flex-w flex-str size1 overlay1">
-        <div class="flex-w flex-col-sb wsize1 bg0 p-l-70 p-t-37 p-b-52 p-r-50 respon1">
-            <div class="wrappic1">
-                <a href="/">
-                    <img src="/images/logo/asraAnimated.gif">
-                </a>
+<div class="intro">
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+                {{ content }}
+                {% if page.show_call_box %}
+                {% include call.html show_button=true %}
+                {% endif %}
             </div>
-            <div class="w-full p-t-100 p-b-90 p-l-48 p-l-0-md">
-                <h3 class="l1-txt1 p-b-34 respon3">
-                    Coming Soon
-                </h3>
-                <p class="m2-txt1 p-b-46">
-                    Sorry, we're down for scheduled maintenance right now.
-                </p>
-                <a class="cta" href="https://discord.com/invite/qwCzwBvRn9">
-                    <span>Join our Discord Server!</span>
+            {% if page.intro_image %}
+            <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+                <img alt="{{ page.header }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="strip">
+    <div class="container pt-6 pb-6 pb-md-10">
+        <div class="row justify-content-center">
+            <div class="wrapper">
+                <a class="cta" href="https://discord.com/api/oauth2/authorize?client_id=751171098971865119&permissions=8&scope=applications.commands%20bot">
+                    <span>INVITE NOW</span>
                     <span>
                         <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -57,22 +38,29 @@
                     </span>
                 </a>
             </div>
-            <div class="flex-w flex-m">
-                <span class="m2-txt2 p-r-40">
-                    Follow us
-                </span>
-                <a href="https://www.youtube.com/channel/UCphY6CS7feFEWrlF6F5RUjw" class="size3 flex-c-m how-social trans-04 m-r-15 m-b-5 m-t-5">
-                    <i class="fa fa-youtube"></i>
-                </a>
-                <a href="https://discord.com/invite/qwCzwBvRn9" class="size3 flex-c-m how-social trans-04 m-r-15 m-b-5 m-t-5">
-                    <i class="fab fa-discord"></i>
-                </a>
-                <a href="https://patreon.com/asraparadise" class="size3 flex-c-m how-social trans-04 m-r-15 m-b-5 m-t-5">
-                    <i class="fab fa-patreon"></i>
-                </a>
-            </div>
-        </div>
-        <div class="wsize2 bg-img1 respon2" style="background-image: url('/images/illustrations/paradise.jpg');">
         </div>
     </div>
-</body>
+</div>
+
+{% if site.data.features %}
+<div class="strip strip-grey">
+    <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+        <div class="row justify-content-center">
+            {% for feature in site.data.features %}
+            <div class="col-12 col-md-6 col-lg-4 mb-2">
+                <div class="feature">
+                    {% if feature.image %}
+                    <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
+                    {% endif %}
+                    <h2 class="feature-title"><a href="{{ feature.url | relative_url }}">{{ feature.title }}</a></h2>
+                    <div class="feature-content">{{ feature.description }}</div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<script src="https://5bbgpqrmlq89.statuspage.io/embed/script.js"></script>
